@@ -1,1 +1,1 @@
-<view class="view"><map class="map"></map><up-frame vue-id="8dd740cc-1" bind:__l="__l"></up-frame></view>
+<view class="view"><map class="map" markers="{{markers}}" longitude="{{longitude}}" latitude="{{latitude}}"></map><up-frame bind:locationMarkers="__e" vue-id="8dd740cc-1" data-event-opts="{{[['^locationMarkers',[['getMarkers']]]]}}" bind:__l="__l"></up-frame></view>

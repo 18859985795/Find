@@ -1,11 +1,29 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+
+
 .upframe {
 	width: 100%;
 	height: 200px;
 	background-color: #fff8f8;
 	position: relative;
 	border-radius: 25rpx;
-/* 	top: -200px; */
+	/* 	top: -200px; */
 }
 .searchbox {
 	width: 100%;
@@ -25,25 +43,26 @@
 .search {
 	width: 100%;
 	height: 100%;
-	background-color: burlywood;
+	/* background-color: burlywood; */
 	margin-top: 8px;
 	display: flex;
 	position: relative;
 }
 .searchipt {
-	width: 650rpx;
+	width: 570rpx;
 	height: 84rpx;
 	background-color: #e2e2e2;
 	border-radius: 25rpx;
 	margin: 0 auto;
 	margin-top: 6.5px;
-	padding-left: 10px;
+	padding-left: 8px;
 }
 .searchicon {
-	height:58rpx;
-	width:58rpx;
+	height: 58rpx;
+	width: 58rpx;
 	position: absolute;
-	left:84%;
-	bottom:27%;
+	left: 91%;
+	bottom: 27%;
 }
+
 
