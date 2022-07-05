@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "disableScroll": true,
+  "usingComponents": {
+    "up-frame": "/components/upFrame/upFrame"
+  }
+}
