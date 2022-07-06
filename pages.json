@@ -3,12 +3,18 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app",
+				"navigationBarTitleText": "lbb的demo",
 				"disableScroll": true
 			}
 		},
 		{
 			"path": "pages/my/my"
+		},
+		{
+			"path": "pages/travelmode/travelmode",
+			"style": {
+				"navigationBarTitleText": "出行方式"
+			}
 		}
 	],
 	"globalStyle": {
@@ -20,9 +26,8 @@
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#3cc51f",
-		"backgroundColor":"#ffffff",
-		"list": [
-			{
+		"backgroundColor": "#ffffff",
+		"list": [{
 				"text": "首页",
 				"pagePath": "pages/index/index",
 				"iconPath": "static/images/首页1.png",
@@ -35,5 +40,10 @@
 				"selectedIconPath": "./static/images/我的2.png"
 			}
 		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "位置信息将用于小程序位置接口的效果展示"
+		}
 	}
 }

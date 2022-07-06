@@ -44,7 +44,12 @@
 								id:res.data[i].id - 0,
 								latitude:res.data[i].location.lat,
 								longitude:res.data[i].location.lng,
-								title:res.data[i].title,
+								callout:{
+									content:res.data[i].title,
+									display:'BYCLICK',
+									borderRadius:8,
+									borderWidth:8
+								},
 								iconPath:"../../static/images/地点.png",
 								alpha:0.5,
 								width:45,

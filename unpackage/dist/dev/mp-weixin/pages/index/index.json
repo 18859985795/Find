@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "uni-app",
+  "navigationBarTitleText": "lbb的demo",
   "disableScroll": true,
   "usingComponents": {
     "up-frame": "/components/upFrame/upFrame"
