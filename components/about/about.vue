@@ -1,7 +1,9 @@
 <template>
 	<div>
 		  <movable-area class="movable-area">
-		    <movable-view class="movable-view" direction="all">
+		    <movable-view class="movable-view" direction="all" inertia=true out-of-bounds=true @click="about" @change="move">
+				<image src="../../static/images/关于.png" mode='aspectFit'></image>
+				关于
 		    </movable-view>
 		  </movable-area>
 
@@ -9,6 +11,14 @@
 </template>
 
 <script>
+	export default{
+		name:'about',
+		methods:{
+			about(){
+				console.log("你好")
+			}
+		}
+	} 
 </script>
 
 <style>
@@ -27,7 +37,16 @@
 	  	pointer-events:auto;// 重设为auto,覆盖父属性设置
 	    height: 50px;
 	    width: 50px;
-	    background: red;
+	    background-color: transparent;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 12px;
+		border:1px solid black
+	  }
+	  image{
+		  width:100%;
+		  height:100%
 	  }
 
 </style>

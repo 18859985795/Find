@@ -3,6 +3,7 @@
 		<map class="map" :markers=markers :longitude=longitude :latitude=latitude show-location :polyline=polyline
 			@callouttap='toLocation'></map>
 		<upFrame @locationMarkers='getMarkers'></upFrame>
+		<about></about>
 	</view>
 
 </template>
@@ -10,6 +11,7 @@
 <script>
 	import upFrame from "@/components/upFrame/upFrame.vue"
 	import eventBus from '@/eventBus.js'
+	import about from '@/components/about/about.vue'
 	import {
 		qqmapsdk
 	} from '@/main.js'
@@ -28,7 +30,8 @@
 			}
 		},
 		components: {
-			upFrame
+			upFrame,
+			about
 		},
 		mounted() {
 			this.getLocation()
@@ -101,8 +104,9 @@
 						}
 						_this.polyline.push({
 							points: pl,
-							color: '#ffff7f',
-							width: 4
+							color: '#00ff00',
+							width: 4,
+							arrowLine:true
 						})
 					},
 					fail: function(error) {

@@ -1,0 +1,1 @@
+<view class="_div"><movable-area class="movable-area"><movable-view class="movable-view" direction="all" inertia="true" out-of-bounds="true" data-event-opts="{{[['tap',[['about',['$event']]]],['change',[['move',['$event']]]]]}}" bindtap="__e" bindchange="__e"><image src="../../static/images/关于.png" mode="aspectFit"></image>关于</movable-view></movable-area></view>

@@ -2,6 +2,7 @@
   "navigationBarTitleText": "lbb的demo",
   "disableScroll": true,
   "usingComponents": {
-    "up-frame": "/components/upFrame/upFrame"
+    "up-frame": "/components/upFrame/upFrame",
+    "about": "/components/about/about"
   }
 }

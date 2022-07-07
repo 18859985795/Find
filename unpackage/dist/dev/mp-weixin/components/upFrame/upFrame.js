@@ -134,6 +134,39 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var _main = __webpack_require__(/*! @/main.js */ 0); //
 //
 //
@@ -153,7 +186,47 @@ var _main = __webpack_require__(/*! @/main.js */ 0); //
 //
 //
 //
-var _default = { name: "upFrame", data: function data() {return { viewTop: -200, inputValue: '', markers: [] };}, methods: { onKeyInput: function onKeyInput(e) {this.inputValue = e.target.value;}, search: function search() {var _this = this;console.log('sdads'), _main.qqmapsdk.search({ keyword: this.inputValue, success: function success(res) {
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { name: "upFrame", data: function data() {return { viewTop: -200, inputValue: '', markers: [], touchPoint: [] };}, methods: { touchStart: function touchStart(e) {this.touchPoint = [e.touches[0].pageX, e.touches[0].pageY];}, touchMove: function touchMove(e) {var curPoint = [e.touches[0].pageX, e.touches[0].pageY];var addValue = Math.abs(curPoint[1] - this.touchPoint[1]) * 1.05; //-60在下面，-200在上面
+      //向下拖
+      if (curPoint[1] >= this.touchPoint[1]) {if (this.viewTop >= -60) {return;}var resTop = this.viewTop + addValue;this.viewTop = resTop;} else {//向上拖
+        if (this.viewTop <= -200) {return;}var resTop = this.viewTop - addValue;this.viewTop = resTop;}this.touchPoint[1] = curPoint[1];}, touchEnd: function touchEnd(e) {if (this.viewTop <= -110) {while (this.viewTop > -200) {this.viewTop = this.viewTop - 1.8;}console.log(this.viewTop);} else {while (this.viewTop < -60) {this.viewTop = this.viewTop + 1.8;}console.log(this.viewTop);}}, onKeyInput: function onKeyInput(e) {this.inputValue = e.target.value;}, search: function search() {var _this = this;
+      this.markers = [];
+      _main.qqmapsdk.search({
+        keyword: this.inputValue,
+        success: function success(res) {
           console.log(res);
           for (var i = 0; i < res.data.length; i++) {
             _this.markers.push({
@@ -178,6 +251,22 @@ var _default = { name: "upFrame", data: function data() {return { viewTop: -200,
           console.log(res);
         } });
 
+    },
+    searchKW1: function searchKW1() {
+      this.inputValue = '加油站';
+      this.search();
+    },
+    searchKW2: function searchKW2() {
+      this.inputValue = '酒店';
+      this.search();
+    },
+    searchKW3: function searchKW3() {
+      this.inputValue = '美食';
+      this.search();
+    },
+    searchKW4: function searchKW4() {
+      this.inputValue = '便利店';
+      this.search();
     } } };exports.default = _default;
 
 /***/ }),
