@@ -240,10 +240,10 @@ var components
 try {
   components = {
     upFrame: function() {
-      return __webpack_require__.e(/*! import() | components/upFrame/upFrame */ "components/upFrame/upFrame").then(__webpack_require__.bind(null, /*! @/components/upFrame/upFrame.vue */ 36))
+      return __webpack_require__.e(/*! import() | components/upFrame/upFrame */ "components/upFrame/upFrame").then(__webpack_require__.bind(null, /*! @/components/upFrame/upFrame.vue */ 50))
     },
     about: function() {
-      return __webpack_require__.e(/*! import() | components/about/about */ "components/about/about").then(__webpack_require__.bind(null, /*! @/components/about/about.vue */ 43))
+      return __webpack_require__.e(/*! import() | components/about/about */ "components/about/about").then(__webpack_require__.bind(null, /*! @/components/about/about.vue */ 57))
     }
   }
 } catch (e) {
@@ -312,7 +312,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _eventBus = _interopRequireDefault(__webpack_require__(/*! @/eventBus.js */ 19));
 
-var _main = __webpack_require__(/*! @/main.js */ 0);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var upFrame = function upFrame() {__webpack_require__.e(/*! require.ensure | components/upFrame/upFrame */ "components/upFrame/upFrame").then((function () {return resolve(__webpack_require__(/*! @/components/upFrame/upFrame.vue */ 36));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var about = function about() {__webpack_require__.e(/*! require.ensure | components/about/about */ "components/about/about").then((function () {return resolve(__webpack_require__(/*! @/components/about/about.vue */ 43));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _main = __webpack_require__(/*! @/main.js */ 0);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var upFrame = function upFrame() {__webpack_require__.e(/*! require.ensure | components/upFrame/upFrame */ "components/upFrame/upFrame").then((function () {return resolve(__webpack_require__(/*! @/components/upFrame/upFrame.vue */ 50));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var about = function about() {__webpack_require__.e(/*! require.ensure | components/about/about */ "components/about/about").then((function () {return resolve(__webpack_require__(/*! @/components/about/about.vue */ 57));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {

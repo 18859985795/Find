@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/my/my",
-    "pages/travelmode/travelmode"
+    "pages/travelmode/travelmode",
+    "pages/discover/discover",
+    "pages/baike/baike"
   ],
   "subPackages": [],
   "window": {
@@ -16,6 +18,12 @@
     "selectedColor": "#3cc51f",
     "backgroundColor": "#ffffff",
     "list": [
+      {
+        "text": "发现",
+        "pagePath": "pages/discover/discover",
+        "iconPath": "static/images/发现2.png",
+        "selectedIconPath": "./static/images/发现1.png"
+      },
       {
         "text": "首页",
         "pagePath": "pages/index/index",

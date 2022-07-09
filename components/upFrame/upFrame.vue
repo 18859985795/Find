@@ -94,12 +94,10 @@
 					while (this.viewTop > -200) {
 						this.viewTop = this.viewTop - 1.8
 					}
-					console.log(this.viewTop)
 				} else {
 					while (this.viewTop < -60) {
 						this.viewTop = this.viewTop + 1.8
 					}
-					console.log(this.viewTop)
 				}
 			},
 			onKeyInput(e) {

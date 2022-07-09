@@ -15,6 +15,18 @@
 			"style": {
 				"navigationBarTitleText": "出行方式"
 			}
+		},
+		{
+			"path": "pages/discover/discover",
+			"style": {
+				"navigationBarTitleText": "发现"
+			}
+		},
+		{
+			"path": "pages/baike/baike",
+			"style": {
+				"navigationBarTitleText": "百度百科"
+			}
 		}
 	],
 	"globalStyle": {
@@ -27,7 +39,14 @@
 		"color": "#7A7E83",
 		"selectedColor": "#3cc51f",
 		"backgroundColor": "#ffffff",
-		"list": [{
+		"list": [
+			{
+				"text": "发现",
+				"pagePath": "pages/discover/discover",
+				"iconPath": "static/images/发现2.png",
+				"selectedIconPath": "./static/images/发现1.png"
+			},
+			{
 				"text": "首页",
 				"pagePath": "pages/index/index",
 				"iconPath": "static/images/首页1.png",

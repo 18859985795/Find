@@ -1,0 +1,45 @@
+
+.view_main{
+	height:100%;
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.image_type{
+	margin-top:20px;
+	height: 700rpx;
+	width: 90%;
+	border-radius: 25rpx;
+	/* box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展] [阴影颜色] [投影方式]; */
+	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2);
+}
+.button_type{
+	width:70rpx;
+	height:70rpx;
+	border-radius: 50%;
+	background-color: #c1cfbf;
+	margin-top: 10px;
+	padding: 10px;
+	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2);
+}
+.view_card{
+	margin-top:20px;
+	/* height: 200rpx; */
+	width: 90%;
+	border-radius: 25rpx;
+	/* box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展] [阴影颜色] [投影方式]; */
+	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow:hidden;
+}
+.view_card image{
+	margin: 10px 0 10px 0 ;
+}
+.baike{
+	color: aqua;
+	text-decoration:underline;
+}
+
