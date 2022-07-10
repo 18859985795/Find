@@ -32,8 +32,8 @@
         "useCompilerPlugins": false
     },
     "compileType": "miniprogram",
-    "libVersion": "2.24.7",
-    "appid": "touristappid",
+    "libVersion": "2.25.0",
+    "appid": "wx7b2c2e827dbf535a",
     "projectname": "地图功能开发",
     "condition": {},
     "editorSetting": {

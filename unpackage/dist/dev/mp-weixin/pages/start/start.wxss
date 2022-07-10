@@ -1,0 +1,28 @@
+
+.contain{
+	width:100%;
+	height:100%
+}
+image{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left: 0rpx;
+	top: 0rpx;
+	z-index: -1;
+}
+.go{
+	width:70px;
+	height:30px;
+	z-index: 9;
+	position: absolute;
+	left:550rpx;
+	top:45rpx;
+	border-radius: 25rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 13px;
+	background-color: #c8c8c8;
+}
+

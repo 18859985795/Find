@@ -1,0 +1,1 @@
+<view class="_div"><view class="contain _div"><button data-event-opts="{{[['tap',[['go',['$event']]]]]}}" class="go" bindtap="__e">{{"跳过"+count+"s"}}</button><image src="/static/images/柴犬.jpg" mode></image></view></view>
