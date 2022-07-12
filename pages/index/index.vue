@@ -109,13 +109,6 @@
 							arrowLine:true
 						})
 					},
-					fail: function(error) {
-						console.log(error)
-						uni.showToast({
-							title:error.message,
-							icon:'error'
-						})
-					}
 				})
 			}
 

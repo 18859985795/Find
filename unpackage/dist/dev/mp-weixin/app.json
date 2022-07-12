@@ -5,7 +5,9 @@
     "pages/my/my",
     "pages/travelmode/travelmode",
     "pages/discover/discover",
-    "pages/baike/baike"
+    "pages/baike/baike",
+    "pages/login/login",
+    "pages/register/register"
   ],
   "subPackages": [],
   "window": {

@@ -30,7 +30,15 @@
 		},
 		methods:{
 			photograph(){
-				this.getEncoding()
+				const Token=uni.getStorageSync("Token")
+				if(!Token){
+					uni.navigateTo({
+						url:'../../pages/login/login'
+					})
+				}else{
+					this.getEncoding()
+				}
+				
 			},
 			getAccessToken(){
 				let _this=this

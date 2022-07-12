@@ -1,1 +1,1 @@
-<view>嘿嘿</view>
+<view>{{''+userdata.username+''}}</view>

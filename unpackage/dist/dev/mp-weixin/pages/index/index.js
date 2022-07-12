@@ -105,17 +105,20 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 {
   onLaunch: function onLaunch() {
     console.log('App Launch');
   },
   onShow: function onShow() {
     console.log('App Show');
+    uni.removeStorageSync('Token');
   },
   onHide: function onHide() {
     console.log('App Hide');
+
   } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 9 */
@@ -248,10 +251,10 @@ var components
 try {
   components = {
     upFrame: function() {
-      return __webpack_require__.e(/*! import() | components/upFrame/upFrame */ "components/upFrame/upFrame").then(__webpack_require__.bind(null, /*! @/components/upFrame/upFrame.vue */ 58))
+      return __webpack_require__.e(/*! import() | components/upFrame/upFrame */ "components/upFrame/upFrame").then(__webpack_require__.bind(null, /*! @/components/upFrame/upFrame.vue */ 77))
     },
     about: function() {
-      return __webpack_require__.e(/*! import() | components/about/about */ "components/about/about").then(__webpack_require__.bind(null, /*! @/components/about/about.vue */ 65))
+      return __webpack_require__.e(/*! import() | components/about/about */ "components/about/about").then(__webpack_require__.bind(null, /*! @/components/about/about.vue */ 84))
     }
   }
 } catch (e) {
@@ -320,7 +323,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _eventBus = _interopRequireDefault(__webpack_require__(/*! @/eventBus.js */ 27));
 
-var _main = __webpack_require__(/*! @/main.js */ 0);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var upFrame = function upFrame() {__webpack_require__.e(/*! require.ensure | components/upFrame/upFrame */ "components/upFrame/upFrame").then((function () {return resolve(__webpack_require__(/*! @/components/upFrame/upFrame.vue */ 58));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var about = function about() {__webpack_require__.e(/*! require.ensure | components/about/about */ "components/about/about").then((function () {return resolve(__webpack_require__(/*! @/components/about/about.vue */ 65));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _main = __webpack_require__(/*! @/main.js */ 0);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var upFrame = function upFrame() {__webpack_require__.e(/*! require.ensure | components/upFrame/upFrame */ "components/upFrame/upFrame").then((function () {return resolve(__webpack_require__(/*! @/components/upFrame/upFrame.vue */ 77));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var about = function about() {__webpack_require__.e(/*! require.ensure | components/about/about */ "components/about/about").then((function () {return resolve(__webpack_require__(/*! @/components/about/about.vue */ 84));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {
@@ -415,13 +418,6 @@ var _main = __webpack_require__(/*! @/main.js */ 0);function _interopRequireDefa
             color: '#00ff00',
             width: 4,
             arrowLine: true });
-
-        },
-        fail: function fail(error) {
-          console.log(error);
-          uni.showToast({
-            title: error.message,
-            icon: 'error' });
 
         } });
 

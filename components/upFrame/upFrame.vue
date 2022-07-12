@@ -105,50 +105,91 @@
 			},
 			search() {
 				var _this = this;
-				this.markers = []
-				qqmapsdk.search({
-					keyword: this.inputValue,
-					success: function(res) {
-						console.log(res);
-						for (var i = 0; i < res.data.length; i++) {
-							_this.markers.push({
-								id: res.data[i].id - 0,
-								latitude: res.data[i].location.lat,
-								longitude: res.data[i].location.lng,
-								callout: {
-									content: res.data[i].title,
-									display: 'BYCLICK',
-									borderRadius: 8,
-									borderWidth: 8
-								},
-								iconPath: "../../static/images/地点.png",
-								alpha: 0.5,
-								width: 45,
-								height: 45
-							})
-						}
-						_this.$emit('locationMarkers', _this.markers)
-					},
-					fail: function(res) {
-						console.log(res);
-					},
-				});
+				const Token = uni.getStorageSync("Token")
+				if (!Token) {
+					uni.navigateTo({
+						url: '../../pages/login/login'
+					})
+				} else {
+					// console.log(Token)
+					this.markers = []
+					qqmapsdk.search({
+						keyword: this.inputValue,
+						success: function(res) {
+							console.log(res);
+							for (var i = 0; i < res.data.length; i++) {
+								_this.markers.push({
+									id: res.data[i].id - 0,
+									latitude: res.data[i].location.lat,
+									longitude: res.data[i].location.lng,
+									callout: {
+										content: res.data[i].title,
+										display: 'BYCLICK',
+										borderRadius: 8,
+										borderWidth: 8
+									},
+									iconPath: "../../static/images/地点.png",
+									alpha: 0.5,
+									width: 45,
+									height: 45
+								})
+							}
+							_this.$emit('locationMarkers', _this.markers)
+						},
+						fail: function(res) {
+							console.log(res);
+						},
+					});
+				}
+
 			},
 			searchKW1() {
-				this.inputValue = '加油站'
-				this.search()
+				const Token = uni.getStorageSync("Token")
+				if (!Token) {
+					uni.navigateTo({
+						url: '../../pages/login/login'
+					})
+				} else {
+					this.inputValue = '加油站'
+					this.search()
+				}
+
 			},
 			searchKW2() {
-				this.inputValue = '酒店'
-				this.search()
+				const Token = uni.getStorageSync("Token")
+				if (!Token) {
+					uni.navigateTo({
+						url: '../../pages/login/login'
+					})
+				} else {
+					this.inputValue = '酒店'
+					this.search()
+				}
+
 			},
 			searchKW3() {
-				this.inputValue = '美食'
-				this.search()
+				const Token = uni.getStorageSync("Token")
+				if (!Token) {
+					uni.navigateTo({
+						url: '../../pages/login/login'
+					})
+				} else {
+					this.inputValue = '美食'
+					this.search()
+				}
+
 			},
 			searchKW4() {
-				this.inputValue = '便利店'
-				this.search()
+				const Token = uni.getStorageSync("Token")
+				if (!Token) {
+					uni.navigateTo({
+						url: '../../pages/login/login'
+					})
+				} else {
+					this.inputValue = '便利店'
+					this.search()
+				}
+
 			},
 
 		}

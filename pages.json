@@ -1,9 +1,8 @@
-
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-	{
-		"path": "pages/start/start"
-	},
+		{
+			"path": "pages/start/start"
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -32,7 +31,25 @@
 				"navigationBarTitleText": "百度百科"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/register/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -44,7 +61,7 @@
 		"selectedColor": "#3cc51f",
 		"backgroundColor": "#ffffff",
 		"list": [
-			
+
 			{
 				"text": "首页",
 				"pagePath": "pages/index/index",

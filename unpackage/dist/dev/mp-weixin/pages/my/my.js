@@ -128,20 +128,31 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-var _default =
-{
-  name: "my",
-  data: function data() {
-    return {};
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
-  } };exports.default = _default;
+
+
+
+
+var _eventBus = _interopRequireDefault(__webpack_require__(/*! @/eventBus.js */ 27));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
+//
+//
+var _default = { name: "my", data: function data() {return { userdata: {} };
+  },
+  onShow: function onShow() {
+    this.getUserData();
+  },
+  methods: {
+    getUserData: function getUserData() {
+      var _this = this;
+      _eventBus.default.$on('getUsers', function (data) {
+        _this.userdata = data;
+      });
+    } } };exports.default = _default;
 
 /***/ })
 

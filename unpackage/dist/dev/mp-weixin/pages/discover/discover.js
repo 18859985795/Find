@@ -162,7 +162,15 @@ var _default =
   },
   methods: {
     photograph: function photograph() {
-      this.getEncoding();
+      var Token = uni.getStorageSync("Token");
+      if (!Token) {
+        uni.navigateTo({
+          url: '../../pages/login/login' });
+
+      } else {
+        this.getEncoding();
+      }
+
     },
     getAccessToken: function getAccessToken() {
       var _this = this;
