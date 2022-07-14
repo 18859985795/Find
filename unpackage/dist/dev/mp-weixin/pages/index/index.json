@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "lbb的demo",
+  "navigationBarTitleText": "地图",
   "disableScroll": true,
   "usingComponents": {
     "up-frame": "/components/upFrame/upFrame",

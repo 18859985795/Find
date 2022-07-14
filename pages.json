@@ -1,17 +1,28 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/share/share",
+			"style": {
+				"navigationBarTitleText": "分享",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
 			"path": "pages/start/start"
 		},
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "lbb的demo",
+				"navigationBarTitleText": "地图",
 				"disableScroll": true
 			}
 		},
 		{
-			"path": "pages/my/my"
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
 		},
 		{
 			"path": "pages/travelmode/travelmode",
@@ -30,26 +41,23 @@
 			"style": {
 				"navigationBarTitleText": "百度百科"
 			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	    ,{
-            "path" : "pages/login/login",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "登录",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/register/register",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -73,6 +81,12 @@
 				"pagePath": "pages/discover/discover",
 				"iconPath": "static/images/发现2.png",
 				"selectedIconPath": "./static/images/发现1.png"
+			},
+			{
+				"text": "分享",
+				"pagePath": "pages/share/share",
+				"iconPath": "static/images/分享1.png",
+				"selectedIconPath": "./static/images/分享2.png"
 			},
 			{
 				"text": "我的",

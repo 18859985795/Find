@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/share/share",
     "pages/start/start",
     "pages/index/index",
     "pages/my/my",
@@ -32,6 +33,12 @@
         "pagePath": "pages/discover/discover",
         "iconPath": "static/images/发现2.png",
         "selectedIconPath": "./static/images/发现1.png"
+      },
+      {
+        "text": "分享",
+        "pagePath": "pages/share/share",
+        "iconPath": "static/images/分享1.png",
+        "selectedIconPath": "./static/images/分享2.png"
       },
       {
         "text": "我的",

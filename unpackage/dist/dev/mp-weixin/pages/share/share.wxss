@@ -1,0 +1,34 @@
+
+.uni-common-mt {
+	margin-top: 15px;
+}
+.uni-padding-wrap {
+	/* width: 750rpx; */
+	padding: 0px 30px;
+}
+.content {
+
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	text-align: center;
+}
+.swiper-box{
+	/* height: 400rpx; */
+	margin-top: 50rpx;
+	width: 610rpx;
+	background-color: #580999;
+}
+.btn{
+	position: absolute;
+	bottom: 55rpx;
+	left:255rpx;
+	width: 250rpx;
+}
+.btn button {
+	background-color: #00aaff;
+	border-radius: 25rpx
+}
+

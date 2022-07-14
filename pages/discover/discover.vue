@@ -38,7 +38,6 @@
 				}else{
 					this.getEncoding()
 				}
-				
 			},
 			getAccessToken(){
 				let _this=this
