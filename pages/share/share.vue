@@ -7,16 +7,16 @@
 		<view class="content">
 			<view v-show="current === 0">
 				<div class='swiper-box'></div>
-				<Swiper></Swiper>
+				<Swiper :ImageURL='ImageURL'></Swiper>
 			</view>
 			<view v-show="current === 1">
 				<div class='swiper-box'></div>
-				<Swiper></Swiper>
+				<Swiper :ImageURL='ImageURL'></Swiper>
 			</view>
 		</view>
 		
 		<view class="btn">
-			<button type="primary">分享</button>
+			<button type="primary" @click="toUpload">分享</button>
 		</view>
 		
 	</view>
@@ -28,16 +28,38 @@
 		data() {
 			return {
 				items: ['最新', '最热'],
-				current: 0
+				current: 0,
+				ImageURL:[]
 			}
 		},
 		components: {
 			Swiper
 		},
+		onShow(){
+			this.getImage()
+		},
 		methods: {
 			onClickItem(e) {
 			 if (this.current != e.currentIndex) {
 					this.current = e.currentIndex;
+				}
+			},
+			async getImage() {
+				const db = uniCloud.database();
+				const res = await db.collection('image').get()
+				this.ImageURL =res.result.data
+			},
+			toUpload(){
+				var _this = this;
+				const Token = uni.getStorageSync("Token")
+				if (!Token) {
+					uni.navigateTo({
+						url: '../../pages/login/login'
+					})
+				} else {
+					uni.navigateTo({
+						url:'../upload/upload'
+					})
 				}
 			}
 		}

@@ -63,7 +63,7 @@
 .swiper {
 	height: 700rpx;
 } */
-.swiper-box{
+.swiper-box {
 	height: 700rpx;
 	background-color: transparent;
 }

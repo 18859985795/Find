@@ -8,7 +8,9 @@
     "pages/discover/discover",
     "pages/baike/baike",
     "pages/login/login",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/detail/detail",
+    "pages/upload/upload"
   ],
   "subPackages": [],
   "window": {

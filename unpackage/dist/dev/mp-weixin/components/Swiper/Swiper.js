@@ -80,7 +80,7 @@ var components
 try {
   components = {
     uniSwiperDot: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot */ "uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot.vue */ 159))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot */ "uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot.vue */ 136))
     }
   }
 } catch (e) {
@@ -137,21 +137,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -167,17 +153,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 var _default =
 {
+  props: ['ImageURL'],
   data: function data() {
     return {
-      info: [{
-        url: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/094a9dc0-50c0-11eb-b680-7980c8a877b8.jpg' },
-      {
-        url: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/094a9dc0-50c0-11eb-b680-7980c8a877b8.jpg' },
-      {
-        url: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/094a9dc0-50c0-11eb-b680-7980c8a877b8.jpg' },
-      {
-        url: '' }],
-
+      info: [],
       current: 0,
       mode: 'round',
       dotsStyles: {
@@ -185,10 +164,31 @@ var _default =
 
 
   },
+  watch: {
+    ImageURL: function ImageURL(curVal, oldVal) {
+      if (curVal) {
+        this.info = curVal;
+      }
+    } },
+
   methods: {
     change: function change(e) {
       this.current = e.detail.current;
+    },
+    toDetail: function toDetail() {
+      var _this = this;
+      var Token = uni.getStorageSync("Token");
+      if (!Token) {
+        uni.navigateTo({
+          url: '../../pages/login/login' });
+
+      } else {
+        uni.navigateTo({
+          url: '../../pages/detail/detail' });
+
+      }
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
