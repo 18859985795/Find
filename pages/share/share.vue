@@ -16,7 +16,7 @@
 		</view>
 		
 		<view class="btn">
-			<button type="primary" @click="toUpload">分享</button>
+			<button type="primary" @click="toUpload" hover-class="clickBtn">分享</button>
 		</view>
 		
 	</view>
@@ -103,5 +103,8 @@
 	.btn button {
 		background-color: #00aaff;
 		border-radius: 25rpx
+	}
+	.clickBtn{
+		background-color: #00aaff;
 	}
 </style>

@@ -31,4 +31,7 @@
 	background-color: #00aaff;
 	border-radius: 25rpx
 }
+.clickBtn{
+	background-color: #00aaff;
+}
 

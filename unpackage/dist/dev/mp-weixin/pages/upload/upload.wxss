@@ -1,0 +1,19 @@
+
+.contain {
+	margin: 20px;
+	margin-top: 10px;
+}
+.example-body {
+	/* padding: 10px; */
+	padding-top: 0;
+}
+.des {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.btn{
+	margin-top: 120px;
+	background-color: #00aaff;
+	color: white;
+}
+

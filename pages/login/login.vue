@@ -22,7 +22,6 @@
 </template>
 
 <script>
-	import eventBus from '@/eventBus.js'
 	export default {
 		data() {
 			return {
@@ -42,7 +41,7 @@
 				// console.log(res.result.data[0].username,res.result.data[0].password)
 				if(this.username==res.result.data[0].username&&this.password==res.result.data[0].password){
 					uni.setStorageSync('Token','15sda6d1sa5#4d5asa')
-					eventBus.$emit('getUsers',res.result.data[0])
+					this.$store.commit('getuserData',res.result.data[0])
 					uni.showToast({
 						title:'登陆成功',
 					})

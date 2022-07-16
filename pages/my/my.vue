@@ -1,11 +1,10 @@
 <template>
 	<view class="">
-		{{userdata.username}}
+		{{userdata.nickname}}
 	</view>
 </template>
 
 <script>
-	import eventBus from '@/eventBus.js'
 	export default {
 		name: "my",
 		data(){
@@ -13,16 +12,13 @@
 				userdata:{}
 			}
 		},
+		onReady() {
+			
+		},
 		onShow(){
-			this.getUserData()
+			this.userdata=this.$store.state.userData
 		},
 		methods:{
-			getUserData(){
-				let _this=this
-				eventBus.$on('getUsers',(data)=>{
-					_this.userdata=data
-				})
-			}
 		}
 	}
 </script>
