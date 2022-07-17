@@ -4,6 +4,7 @@
 			<uni-segmented-control :current="current" :values="items" @clickItem="onClickItem" styleType="button"
 				activeColor="#00aaff"></uni-segmented-control>
 		</view>
+		
 		<view class="content">
 			<view v-show="current === 0">
 				<div class='swiper-box'></div>

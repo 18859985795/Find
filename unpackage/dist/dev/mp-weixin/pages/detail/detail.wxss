@@ -1,0 +1,20 @@
+
+.card-actions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 45px;
+	border-top: 1px #eee solid;
+}
+.card-actions-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.card-actions-item-text {
+	font-size: 12px;
+	color: #666;
+	margin-left: 5px;
+}
+

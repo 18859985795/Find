@@ -5,7 +5,7 @@
 		},
 		onShow: function() {
 			console.log('App Show')
-			uni.removeStorageSync('Token')
+			// uni.removeStorageSync('Token')
 		},
 		onHide: function() {
 			console.log('App Hide')

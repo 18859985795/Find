@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/share/share",
+    "pages/detail/detail",
     "pages/start/start",
     "pages/index/index",
     "pages/my/my",
@@ -9,7 +10,6 @@
     "pages/baike/baike",
     "pages/login/login",
     "pages/register/register",
-    "pages/detail/detail",
     "pages/upload/upload"
   ],
   "subPackages": [],

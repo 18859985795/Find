@@ -169,46 +169,50 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uniCloud, uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
-{
-  data: function data() {
-    return {
-      imageData: {
-        username: "",
-        imageURL: "",
-        star: 0,
-        description: "" },
+/* WEBPACK VAR INJECTION */(function(uniCloud, uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
-      userdata: {} };
 
-  },
-  onShow: function onShow() {
-    this.getUserData();
-    this.imageData.username = this.userdata.nickname;
-  },
-  methods: {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _currentDate = _interopRequireDefault(__webpack_require__(/*! @/util/currentDate.js */ 211));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { imageData: { username: "", imageURL: "", star: 0, description: "", date: "" }, userdata: {} };}, onShow: function onShow() {}, methods: {
     getImageURL: function getImageURL(e) {
       this.imageData.imageURL = e.tempFiles[0].url;
     },
     upload: function upload() {
       var db = uniCloud.database();
+      this.getUserData();
+      this.imageData.username = this.userdata.nickname;
+      this.imageData.date = _currentDate.default.getDate();
       db.collection('image').add(this.imageData).then(function (e) {
         uni.showToast({
           title: "上传成功" });

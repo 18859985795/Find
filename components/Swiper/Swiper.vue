@@ -2,7 +2,7 @@
 	<div>
 		<uni-swiper-dot :info="info" :current="current" field="content" :mode="mode" :dotsStyles="dotsStyles">
 			<swiper class="swiper-box" @change="change" autoplay circular>
-				<swiper-item v-for="(item ,index) in info" :key="info._id" @click="toDetail">
+				<swiper-item v-for="(item ,index) in info" :key="item._id" @click="toDetail(item._id)">
 					<view class="swiper-item">
 						<image :src=item.imageURL mode=""></image>
 					</view>
@@ -36,7 +36,7 @@
 			change(e) {
 				this.current = e.detail.current;
 			},
-			toDetail() {
+			toDetail(id) {
 				var _this = this;
 				const Token = uni.getStorageSync("Token")
 				if (!Token) {
@@ -45,7 +45,7 @@
 					})
 				} else {
 					uni.navigateTo({
-						url:'../../pages/detail/detail'
+						url:'../../pages/detail/detail?id='+id
 					})
 				}
 			},

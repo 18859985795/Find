@@ -16,21 +16,22 @@
 </template>
 
 <script>
+	import currentDate from '@/util/currentDate.js'
 	export default {
 		data() {
 			return {
 				imageData:{
-					username:"",
+					username:"", 
 					imageURL:"",
 					star:0,
-					description:""
+					description:"",
+					date:""
 				},
 				userdata:{}
 			}
 		},
 		onShow(){
-			this.getUserData()
-			this.imageData.username=this.userdata.nickname
+			
 		},
 		methods: {
 			getImageURL(e) {
@@ -38,6 +39,9 @@
 			},
 			upload(){
 				const db = uniCloud.database();
+				this.getUserData()
+				this.imageData.username=this.userdata.nickname
+				this.imageData.date=currentDate.getDate()
 				db.collection('image').add(this.imageData).then(e=>{
 					uni.showToast({
 						title:"上传成功"

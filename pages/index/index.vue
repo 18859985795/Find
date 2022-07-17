@@ -14,7 +14,7 @@
 	import about from '@/components/about/about.vue'
 	import {
 		qqmapsdk
-	} from '@/main.js'
+	} from '@/util/map.js'
 	export default {
 		name: 'index',
 		data() {

@@ -175,7 +175,7 @@ var _default =
     change: function change(e) {
       this.current = e.detail.current;
     },
-    toDetail: function toDetail() {
+    toDetail: function toDetail(id) {
       var _this = this;
       var Token = uni.getStorageSync("Token");
       if (!Token) {
@@ -184,7 +184,7 @@ var _default =
 
       } else {
         uni.navigateTo({
-          url: '../../pages/detail/detail' });
+          url: '../../pages/detail/detail?id=' + id });
 
       }
     } } };exports.default = _default;
