@@ -1,6 +1,11 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
 		{
 			"path": "pages/share/share",
 			"style": {
@@ -25,12 +30,7 @@
 				"disableScroll": true
 			}
 		},
-		{
-			"path": "pages/my/my",
-			"style": {
-				"navigationBarTitleText": "我的"
-			}
-		},
+		
 		{
 			"path": "pages/travelmode/travelmode",
 			"style": {

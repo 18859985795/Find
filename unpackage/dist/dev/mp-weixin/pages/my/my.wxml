@@ -1,1 +1,1 @@
-<view>{{''+userdata.nickname+''}}</view>
+<view class="page"><view class="info-box"><image src="/static/images/狗.jpg" mode></image><view class="text-box"><block wx:if="{{userdata.nickname===undefined?true:false}}"><view data-event-opts="{{[['tap',[['toLogin',['$event']]]]]}}" class="name1" bindtap="__e">未登录</view></block><block wx:else><view class="name2">{{''+userdata.nickname+''}}</view></block><text>简介:XXXXXXXXXXX</text></view></view><view class="contain"><view class="function-box"></view><view class="function-box"></view><view class="function-box"></view></view></view>

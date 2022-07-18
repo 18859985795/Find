@@ -16,6 +16,9 @@
 		methods:{
 			about(){
 				console.log("你好")
+				uni.showModal({
+					title:'有相关问题请加微信:18859985795'
+				})
 			}
 		}
 	} 

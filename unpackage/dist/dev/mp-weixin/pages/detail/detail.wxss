@@ -17,4 +17,7 @@
 	color: #666;
 	margin-left: 5px;
 }
+.example-body {
+	margin-left: 40rpx;
+}
 

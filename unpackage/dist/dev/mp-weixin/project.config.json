@@ -29,12 +29,11 @@
             "outputPath": ""
         },
         "disableUseStrict": false,
-        "useCompilerPlugins": false,
-        "minifyWXML": true
+        "useCompilerPlugins": false
     },
     "compileType": "miniprogram",
     "libVersion": "2.25.0",
-    "appid": "wx7b2c2e827dbf535a",
+    "appid": "touristappid",
     "projectname": "发现",
     "condition": {},
     "editorSetting": {

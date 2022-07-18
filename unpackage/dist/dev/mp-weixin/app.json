@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/my/my",
     "pages/share/share",
     "pages/detail/detail",
     "pages/start/start",
     "pages/index/index",
-    "pages/my/my",
     "pages/travelmode/travelmode",
     "pages/discover/discover",
     "pages/baike/baike",
