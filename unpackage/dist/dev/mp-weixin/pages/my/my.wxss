@@ -1,36 +1,138 @@
 
-.page{
+.page {
 	margin: 20rpx;
 }
-.info-box{
+.info-box {
 	display: flex;
 }
-.info-box image{
+.info-box image {
 	width: 50px;
-	height:50px;
+	height: 50px;
 	border-radius: 25px;
 }
-.text-box{
+.text-box {
 	margin-left: 30rpx;
 }
-.text-box .name1{
-	text-decoration:underline;
-	color:#55ffff
+.text-box .name1 {
+	text-decoration: underline;
+	color: #55ffff
 }
-.text-box text{
+.text-box text {
 	font-size: 12px;
 }
-.contain{
+.contain {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
-.function-box{
+.function-box1 {
 	width: 700rpx;
-	height: 300rpx;
-	background-color: #d8d8d8;
+	height: 400rpx;
+	background-color: #f3f3f3;
 	margin-top: 40rpx;
 	border-radius: 25rpx;
 	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2);
+}
+.line1 {
+	display: flex;
+}
+.option-box {
+	background-color: transparent;
+	width: 175rpx;
+	height: 200rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.option-box uni-icons {
+	margin-top: 30rpx;
+}
+.option-box text {
+	margin-top: 4px;
+	font-size: 10px;
+}
+.function-box2 {
+	width: 700rpx;
+	height: 250rpx;
+	background-color: #f3f3f3;
+	margin-top: 40rpx;
+	border-radius: 25rpx;
+	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2);
+}
+.application-box {
+	height: 125rpx;
+	width: 350rpx;
+	/* background-color: #1e34ff; */
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+.application-text{
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+/* .application-text text{
+	font-size: 13px
+} */
+.notes1{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.notes2{
+	font-size: 9px;
+	color: #ff5500;
+}
+.application-box uni-icons{
+	position: absolute;
+	left:300rpx
+}
+.application-box uni-icons.icon1{
+	position: absolute;
+	left: 600rpx;
+}
+.function-box3 {
+	width: 700rpx;
+	height: 200rpx;
+	background-color: #f3f3f3;
+	margin-top: 40rpx;
+	border-radius: 25rpx;
+	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+}
+.money{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.money text:nth-child(1){
+	font-size: 16px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.money .details text{
+	color: #969696;
+	font-size: 11px;
+}
+.money .details uni-icons{
+	margin-right: 5px;
+}
+.quota{
+	display: flex;
+	justify-content: space-around;
+	/* align-items: center; */
+}
+.quota-box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8px;
+}
+.quota-box text:nth-child(2){
+	margin-top: 5px;
+	font-size: 11px
 }
 
