@@ -53,7 +53,7 @@
 <script>
 	import {
 		qqmapsdk
-	} from '@/main.js'
+	} from '@/util/map.js'
 	export default {
 		name: "upFrame",
 		data() {

@@ -95,10 +95,10 @@ __webpack_require__.r(__webpack_exports__);
 {
   onLaunch: function onLaunch() {
     console.log('App Launch');
+    uni.removeStorageSync('Token');
   },
   onShow: function onShow() {
     console.log('App Show');
-    uni.removeStorageSync('Token');
   },
   onHide: function onHide() {
     console.log('App Hide');
